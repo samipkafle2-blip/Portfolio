@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samip Kafle - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container nav-container">
+            <h1 class="logo">Samip Kafle</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+        <div class="container">
+            <h2>Web Developer & Student</h2>
+            <p>I create clean, responsive and user-friendly websites using HTML, CSS and GitHub.</p>
+            <a class="btn" href="#projects">See My Work</a>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="container section">
+        <h3>About Me</h3>
+        <div class="about-grid">
+            <img src="images/me.jpg" alt="Profile Photo">
+            <div>
+                <p>Hello! I’m a student passionate about web development. I enjoy building websites that are simple, scalable and visually appealing.</p>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>Git & GitHub</li>
+                    <li>Responsive Design</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECT SECTION ===== -->
+    <section id="projects" class="container section">
+        <h3>Projects</h3>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="images/screenshot_1.png" alt="Portfolio Screenshot">
+                <h4>Personal Portfolio</h4>
+                <p>A fully designed HTML and CSS portfolio deployed on GitHub Pages.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="images/screenshot_1 png.png" alt="Project Screenshot">
+                <h4>Quiz Game</h4>
+                <p>A simple front-end quiz game demonstrating DOM interaction and logic flow.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="container section">
+        <h3>Contact Me</h3>
+        <form class="contact-form">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>&copy; <span id="year">2025</span> Samip Kafle | All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Auto update footer year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
